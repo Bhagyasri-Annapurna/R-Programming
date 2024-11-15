@@ -3,16 +3,16 @@ dir.create ("destination_folder")
 
 #creates a file in present directory
 file.create ("new_text_file.txt") 
-d1=data.frame(name=c("bhagya","anil","Kiran"),age=c(21,17,19))
+d1=data.frame(name=c("naina","gurpreet","ahsaas"),age=c(21,17,19))
 write.table(d1,file="new_text_file.txt")
 
 
 file.create ("new_csv_file.csv")
 Id<-c(671,705,716,538,461)
-Name<-c("Bhagyasri","Prathyusha","Manisha","Abhishek","Kiran Kumar")
+Name<-c("Kiran","Priya","Manjusha","Manas","Vinay")
 Salary<-c("25k","34k","41k","25k","50k")
-Role<-c("Data Analyst","Research Developer","Verification Engineer","Verification Engineer","Embedded Engineer")
-Location<-c("Vijayawada","Hyderabad","Bangalore","Bangalore","Bangalore")
+Role<-c("Data Analyst","Research Developer","Verification Engineer","Mechanical Engineer"," Embedded Engineer")
+Location<-c("Hyderabad","Mumbai","Bangalore","Gurgram","Bangalore")
 df<-data.frame(Id,Name,Salary,Role,Location)
 write.csv(df,file="new_csv_file.csv",row.names = FALSE)
 
